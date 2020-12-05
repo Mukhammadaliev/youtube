@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  margin-right: 2%;
+  min-width: 116px;
+}
+.logo-img {
+  display: block;
+}
+
+@include breakpoint-down (600) {
+  .logo {
+    margin-right: auto;
+    flex-grow: 1;
+  }
+}

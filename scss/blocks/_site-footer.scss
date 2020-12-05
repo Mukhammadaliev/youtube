@@ -1,0 +1,41 @@
+.footer__list {
+  display: none;
+}
+
+
+@include breakpoint-down (600) {
+  .footer__list {
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 0;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .footer__list .footer__link {
+    flex-direction: column;
+    &::before {
+      margin-right: 0;
+      margin-bottom: 7px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .footer__list .aside-page__item {
+    margin-bottom: 0;
+  }
+}
+
+
+@include breakpoint-down (450) {
+  .footer__link {
+    font-size: 10px;
+    line-height: 13px;
+    color: #898989;
+  }
+}

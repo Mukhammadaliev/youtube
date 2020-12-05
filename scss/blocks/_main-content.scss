@@ -1,0 +1,26 @@
+.site-main {
+  display: flex;
+  height: 100%;
+}
+
+
+
+
+
+@include breakpoint-down (1350) {
+  .main-body--open .parda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+}
+
+@include breakpoint-down (800) {
+  .parda {
+    display: none;
+  }
+}
